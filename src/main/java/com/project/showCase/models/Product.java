@@ -2,20 +2,28 @@ package com.project.showCase.models;
 
 public class Product {
 
-    private String id;
+    private Integer id;
     private String name;
     private String description;
     private Double price;
     private String seller;
 
+    public Product(Integer id, String name, String description, Double price, String seller) {
+        this.id = id;
+        this.name = name;
+        this.description = description;
+        this.price = price;
+        this.seller = seller;
+    }
+
     public Product() {
     }
 
-    public String getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
