@@ -50,19 +50,19 @@ public class PostgreSQLConnection {
         ResultSet resultSet = executeQuery(query);
         List<Product> products = new ArrayList<>();
         while (resultSet.next()) {
-            Product product = new Product(
-                    resultSet.getInt("id"),
-                    resultSet.getString("name"),
-                    resultSet.getString("description"),
-                    resultSet.getDouble("price"),
-                    resultSet.getString("seller"));
+            Product product = new Product();
+            product.setId(resultSet.getInt("id"));
+            product.setName(resultSet.getString("name"));
+            product.setDescription(resultSet.getString("description"));
+            product.setPrice(resultSet.getDouble("price"));
+            product.setSeller(resultSet.getString("seller"));
             products.add(product);
         }
         return products;
     }
 
     public static Product getProductById(Integer id) throws SQLException {
-        String query = "select * from product where id = ?" + id;
+        String query = "select * from product where id = "+ id + "";
         ResultSet resultSet = executeQuery(query);
         Product product = new Product();
         if (resultSet.next()) {
