@@ -1,6 +1,6 @@
 package com.project.showCase.restControllers;
 
-import com.project.showCase.jdbc.JdbcProductRepository;
+//import com.project.showCase.jdbc.JdbcProductRepository;
 import com.project.showCase.jdbc.PostgreSQLConnection;
 import com.project.showCase.models.Product;
 import com.project.showCase.services.ProductService;
@@ -18,7 +18,7 @@ public class ProductRestController {
     @Autowired
     ProductService productService;
     @Autowired
-    JdbcProductRepository jdbcProductRepository;
+//    JdbcProductRepository jdbcProductRepository;
 
 //    @GetMapping("/getAllProducts")
 //    public ResponseEntity<List> getProducts() {

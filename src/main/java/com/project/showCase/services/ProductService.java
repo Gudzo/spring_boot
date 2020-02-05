@@ -1,37 +1,33 @@
 package com.project.showCase.services;
 
-
 import com.project.showCase.models.Product;
+import com.project.showCase.models.ProductRepositiory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
-import java.util.function.Predicate;
 
 @Service
 public class ProductService {
+    @Autowired
+    private ProductRepositiory repo;
 
-    public List<Product> getAllProducts() {
-        List<Product> listOfProducts = new ArrayList<>();
-//        listOfProducts.add(new Product("1", "Samsung", "Ok", 100.50, "Amazon"));
-//        listOfProducts.add(new Product("2", "Iphone", "Decent", 300.00, "Ebay"));
-//        listOfProducts.add(new Product("3", "OnePlus", "Great", 250.00, "AliExpress"));
-
-        return listOfProducts;
+    public List<Product> listAll() {
+        return repo.findAll();
     }
 
-    public Product getProductById(String id) {
-
-        Predicate<Product> byId = p -> p.getId().equals(id);
-        return filterProducts(byId);
+    public void save(Product product) {
+        repo.save(product);
     }
 
-    private Product filterProducts(Predicate<Product> strategy) {
-        return getAllProducts().stream().filter(strategy).findFirst().orElse(null);
+    public Product get(Integer id) {
+        return repo.findById(id).get();
     }
 
-    public Product addProduct(Product newProduct) {
-        return newProduct;
+    public void delete(Integer id) {
+        repo.deleteById(id);
     }
+
+
 
 }
