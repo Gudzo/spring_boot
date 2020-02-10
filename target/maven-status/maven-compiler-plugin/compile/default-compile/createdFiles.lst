@@ -1,6 +1,4 @@
-com/project/showCase/restControllers/ProductRestController.class
 com/project/showCase/models/Product.class
-com/project/showCase/jdbc/PostgreSQLConnection.class
 com/project/showCase/controllers/ProductController.class
 com/project/showCase/services/ProductService.class
 com/project/showCase/ShowCaseApplication.class
