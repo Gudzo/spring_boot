@@ -14,13 +14,13 @@ public class Product {
     private Double price;
     private String seller;
 
-    public Product(Integer id, String name, String description, Double price, String seller) {
-        this.id = id;
-        this.name = name;
-        this.description = description;
-        this.price = price;
-        this.seller = seller;
-    }
+//    public Product(Integer id, String name, String description, Double price, String seller) {
+//        this.id = id;
+//        this.name = name;
+//        this.description = description;
+//        this.price = price;
+//        this.seller = seller;
+//    }
 
     public Product() {
     }
