@@ -6,18 +6,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="new_test" />
         <module name="showCase" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="new_test" target="1.8" />
       <module name="showCase" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="new_test" options="-parameters" />
       <module name="showCase" options="-parameters" />
     </option>
   </component>

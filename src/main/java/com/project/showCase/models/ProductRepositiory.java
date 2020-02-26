@@ -1,7 +1,5 @@
 package com.project.showCase.models;
 
-import java.util.List;
-
 public interface ProductRepositiory {
 
 //    List<Product> findAll();

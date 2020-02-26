@@ -1,8 +1,8 @@
-/Users/filipgudjevski/IdeaProjects/new_test/src/main/java/com/project/showCase/models/Product.java
-/Users/filipgudjevski/IdeaProjects/new_test/src/main/java/com/project/showCase/controllers/ProductController.java
-/Users/filipgudjevski/IdeaProjects/new_test/src/main/java/com/project/showCase/ShowCaseApplication.java
-/Users/filipgudjevski/IdeaProjects/new_test/src/main/java/com/project/showCase/models/ProductRepositiory.java
-/Users/filipgudjevski/IdeaProjects/new_test/src/main/java/com/project/showCase/jdbc/PostgreSQLConnection.java
-/Users/filipgudjevski/IdeaProjects/new_test/src/main/java/com/project/showCase/jdbc/JdbcProductRepository.java
-/Users/filipgudjevski/IdeaProjects/new_test/src/main/java/com/project/showCase/services/ProductService.java
-/Users/filipgudjevski/IdeaProjects/new_test/src/main/java/com/project/showCase/restControllers/ProductRestController.java
+/Users/filipgudjevski/IdeaProjects/spring_boot_deko/src/main/java/com/project/showCase/services/ProductService.java
+/Users/filipgudjevski/IdeaProjects/spring_boot_deko/src/main/java/com/project/showCase/restControllers/ProductRestController.java
+/Users/filipgudjevski/IdeaProjects/spring_boot_deko/src/main/java/com/project/showCase/controllers/ProductController.java
+/Users/filipgudjevski/IdeaProjects/spring_boot_deko/src/main/java/com/project/showCase/jdbc/JdbcProductRepository.java
+/Users/filipgudjevski/IdeaProjects/spring_boot_deko/src/main/java/com/project/showCase/models/ProductRepositiory.java
+/Users/filipgudjevski/IdeaProjects/spring_boot_deko/src/main/java/com/project/showCase/jdbc/PostgreSQLConnection.java
+/Users/filipgudjevski/IdeaProjects/spring_boot_deko/src/main/java/com/project/showCase/ShowCaseApplication.java
+/Users/filipgudjevski/IdeaProjects/spring_boot_deko/src/main/java/com/project/showCase/models/Product.java
